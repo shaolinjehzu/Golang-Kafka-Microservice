@@ -1,0 +1,22 @@
+AppVersion: 1.0.0
+
+Server:
+  Development: true
+
+Kafka:
+  Brokers: [ "localhost:9091",  "localhost:9092",  "localhost:9093" ]
+
+Logger:
+  DisableCaller: false
+  DisableStacktrace: false
+  Encoding: json
+  Level: info
+
+PostgresDB:
+  HOST: "host.docker.internal"
+  PORT: "5432"
+  User: "pguser"
+  Password: "pgpwd4balances"
+  DB: "balances"
+  SSL: "disable"
+
